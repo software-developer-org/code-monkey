@@ -1,0 +1,14 @@
+{
+    "liveServer.settings.port": 5501,
+    "eslint.debug": true,
+    "eslint.format.enable": true,
+    "editor.formatOnSave": true,
+    "[javascript]": {
+      "editor.formatOnSave": true
+    },
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    },
+    "eslint.alwaysShowStatus": true,
+    "files.autoSave": "onFocusChange"
+  }
