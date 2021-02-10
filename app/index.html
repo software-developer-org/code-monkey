@@ -2,19 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Main Page</title>
 </head>
 <body>
-    <h1>This is the Main Page</h1>
-        <!-- Container für späteres css -->
-        <div id="navbar">
-            <!-- Navigationbar: Links für routing -->
-            <a href="#index">Main Page</a>
-            <a href="./components/tutorials/tutorials.html">Tutorials</a>
-            <a href="./components/demo-app/demo-app.html">Demo-App</a>
-        </div>
-    
+    <!-- Container für späteres css styling der links-->
+    <div id="navbar">
+
+    <!-- Navigationbar: Links für routing -->
+        <a href="#tutorials">Tutorials</a>
+        <a href="#demo_app">Demo-App</a>
+    </div>
+
+    <!-- dynamically loaded content -> view wird über JS geladen-->
+    <div id="content"></div>
+
+    <!-- div index nach div content: content MUß VOR index script geladen sein -->
+    <script src="./components/index/index.js"></script>
 </body>
 </html>
